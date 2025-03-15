@@ -4,3 +4,7 @@ _sourceCategory=Labs/Windows/OS/Windows
 or ProcessCommandLine contains "exploit.cmd" 
 | where ProcessCommandLine contains "SSH" or ProcessCommandLine contains "ssh" or 
 ProcessCommandLine contains "powershell.exe" or ProcessCommandLine contains "cmd.exe"   
+
+
+## Elevation of Privilege - CVE-2023-38175: This query looks for process creation events, and then filters them in windows defender logs for the file 
+types that exploits usually use and then filters it finally on the basis of the files types that run exploits. ##
