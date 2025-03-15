@@ -1,2 +1,3 @@
-# incidentresponse
+# incident-response
+
 ir-scripts
