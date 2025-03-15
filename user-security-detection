@@ -6,4 +6,4 @@ country
 
 
 ## Successful Logins from Unusual Location: This is a very simple query to quickly detect outside IP addresses in the organization if their operations run only in a specific 
-country. 
+country.##
