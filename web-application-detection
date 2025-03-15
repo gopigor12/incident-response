@@ -2,3 +2,6 @@ _sourceCategory=Labs/Apache/*
 | parse regex field=_raw "(?<raw_log>.*)" 
 | parse regex field=raw_log "(?i)content-length:\s*(?<header_size>\d+)" 
 | where method == "POST" AND (header_size > 500 OR status_code == "413") 
+
+## Information Disclosure (CVE-2023-46589): An improper header size limit leads to an incomplete POST request which then returns status code between 400 – 500. 
+The incomplete POST requests trigger an error response which can have information from the previous request. ##
