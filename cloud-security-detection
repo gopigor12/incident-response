@@ -4,3 +4,7 @@ _sourceCategory = *AWS*
 | where requestParameters.policyArn is not null 
 | where requestParameters.setAsDefault = "true" 
 | count by userIdentity.userName, eventname, requestParameters.policyArn 
+
+
+## My query is focused on privilege escalation in the cloud, and the query below monitors any changes in Identity and Access 
+Management, policies, or procedures which can be shown as an attempt to escalate privileges.  ##
