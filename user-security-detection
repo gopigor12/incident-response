@@ -3,3 +3,7 @@ _sourceCategory=Labs/Okta
 country 
 | where _time >= now() - 1h    
 | where country != "United States"
+
+
+## Successful Logins from Unusual Location: This is a very simple query to quickly detect outside IP addresses in the organization if their operations run only in a specific 
+country. 
